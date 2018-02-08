@@ -1,0 +1,18 @@
+<Window x:Class="u1_02_EthanROutput.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:u1_02_EthanROutput"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Label x:Name="lblTitle" Content="Title Box, Not Sure What To Put Here" HorizontalAlignment="Left" Height="25" Margin="10,10,0,0" VerticalAlignment="Top" Width="204"/>
+        <TextBox x:Name="entryFirstName" HorizontalAlignment="Left" Height="30" Margin="10,40,0,0" TextWrapping="Wrap" Text="First Name Here" VerticalAlignment="Top" Width="157" MouseDoubleClick="entryFirstName_Click"/>
+        <TextBox x:Name="entryLastName" HorizontalAlignment="Left" Height="27" Margin="10,75,0,0" TextWrapping="Wrap" Text="Last Name Here" VerticalAlignment="Top" Width="157" MouseDoubleClick="entryLastName_Click"/>
+        <Button x:Name="btnShowGreeting" Content="Show Greeting" HorizontalAlignment="Left" Height="32" Margin="10,171,0,0" VerticalAlignment="Top" Width="157" Click="btnShowGreeting_Click"/>
+        <Label x:Name="lblOutput" Content="" HorizontalAlignment="Left" Height="56" Margin="10,208,0,0" VerticalAlignment="Top" Width="204"/>
+        <Slider x:Name="sliderAge" HorizontalAlignment="Left" Height="37" Margin="10,107,0,0" VerticalAlignment="Top" Width="157" Maximum="117" SmallChange="1" ValueChanged="sliderAge_ValueChanged" LargeChange="0" TickPlacement="BottomRight"/>
+        <Label x:Name="LblSlider" Content="Age = 0" HorizontalAlignment="Left" Height="27" Margin="10,139,0,0" VerticalAlignment="Top" Width="157"/>
+    </Grid>
+</Window>
